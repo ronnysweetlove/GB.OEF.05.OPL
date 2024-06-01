@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>GB.OEF._05.OPL</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\afsluiten.png" />
+    <None Remove="Assets\annuleer.png" />
+    <None Remove="Assets\bewaar.png" />
+    <None Remove="Assets\bewerk.png" />
+    <None Remove="Assets\logo.png" />
+    <None Remove="Assets\nieuw.png" />
+    <None Remove="Assets\verwijder.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GB.OEF.04.CL\GB.OEF.05.CL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\afsluiten.png" />
+    <Resource Include="Assets\annuleer.png" />
+    <Resource Include="Assets\bewaar.png" />
+    <Resource Include="Assets\bewerk.png" />
+    <Resource Include="Assets\logo.png" />
+    <Resource Include="Assets\nieuw.png" />
+    <Resource Include="Assets\verwijder.png" />
+  </ItemGroup>
+
+</Project>

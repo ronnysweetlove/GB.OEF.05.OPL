@@ -1,0 +1,35 @@
+﻿<Window x:Class="GB.OEF._05.OPL.Formulier"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GB.OEF._05.OPL"
+        mc:Ignorable="d"
+        Title="Fiets Calorie dagboek" Icon="/Assets/logo.png" Height="430" Width="290" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <Image Source="/Assets/logo.png" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,20,0,0" Width="48" Height="48"/>
+        <Label Content="Dagboek item" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="40,20,0,0" HorizontalContentAlignment="Center" FontSize="24" FontWeight="Bold"/>
+
+        <Label Content="Datum" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,100,0,0"/>
+        <DatePicker x:Name="DPrDatum" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,100,0,0" Width="100" Height="30"/>
+
+        <Label Content="Snelheid" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,150,0,0"/>
+        <ComboBox x:Name="CBxSnelheid" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,150,0,0" Width="100" Height="30"/>
+        <Label Content="km/u" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="210,150,0,0"/>
+
+        <Label Content="Gewicht" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,200,0,0"/>
+        <TextBox x:Name="TBxGewicht" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,200,0,0" Width="100" Height="30" HorizontalContentAlignment="Right"/>
+        <Label Content="kg" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="210,200,0,0"/>
+
+        <Label Content="Tijd" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,250,0,0"/>
+        <TextBox x:Name="TBxTijd" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,250,0,0" Width="100" Height="30" HorizontalContentAlignment="Right"/>
+        <Label Content="min" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="210,250,0,0"/>
+
+        <Button x:Name="BtnBewaar" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="140,320,0,0" Click="BtnBewaar_Click">
+            <Image Source="/Assets/bewaar.png" Margin="5,5,5,5" Width="32" Height="32"/>
+        </Button>
+        <Button x:Name="BtnAnnuleer" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="190,320,0,0" Click="BtnAnnuleer_Click">
+            <Image Source="/Assets/annuleer.png" Margin="5,5,5,5" Width="32" Height="32"/>
+        </Button>
+    </Grid>
+</Window>

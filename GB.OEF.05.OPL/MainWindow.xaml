@@ -1,0 +1,32 @@
+﻿<Window x:Class="GB.OEF._05.OPL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GB.OEF._05.OPL"
+        mc:Ignorable="d"
+        Title="Fiets Calorie dagboek" Icon="/Assets/logo.png" Height="540" Width="520" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <Image Source="/Assets/logo.png" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,20,0,0" Width="48" Height="48"/>
+        <Label Content="Fiets calorie dagboek" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="80,20,0,0" HorizontalContentAlignment="Center" FontSize="24" FontWeight="Bold"/>
+
+        <ListBox x:Name="LBxDagboekItems" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,100,20,20" Width="400" Height="300" SelectionChanged="LBxDagboekItems_SelectionChanged"/>
+
+        <Label Content="Totaal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="170,420,0,0"/>
+        <Label x:Name="LblTotaal" Content="kCal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,420,20,20" Width="200" HorizontalContentAlignment="Right" FontSize="18" FontWeight="Bold" Background="Crimson" Foreground="White"/>
+
+        <Button x:Name="BtnNieuw" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="440,100,0,0" Click="BtnNieuw_Click">
+            <Image Source="/Assets/nieuw.png" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,5,5" Width="32" Height="32"/>
+        </Button>
+        <Button x:Name="BtnBewerk" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="440,160,0,0" Click="BtnBewerk_Click">
+            <Image Source="/Assets/bewerk.png" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,5,5" Width="32" Height="32"/>
+        </Button>
+        <Button x:Name="BtnVerwijder" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="440,220,0,0" Click="BtnVerwijder_Click">
+            <Image Source="/Assets/verwijder.png" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,5,5" Width="32" Height="32"/>
+        </Button>
+
+        <Button x:Name="BtnAfsluiten" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="440,410,0,0" Click="BtnAfsluiten_Click">
+            <Image Source="/Assets/afsluiten.png" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,5,5" Width="32" Height="32"/>
+        </Button>
+    </Grid>
+</Window>
